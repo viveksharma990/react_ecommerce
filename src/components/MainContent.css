@@ -1,0 +1,75 @@
+.main-content {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin: 50px auto;
+    padding: 50px 0 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+.main-content > h3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #2d343e;
+    font-size: 10.5vw;
+}
+.main-content > .card {
+    width: 30%;
+    border-radius: 15px;
+    flex-direction: column;
+    position: relative;
+    transform: scale(0.8);
+    transition: all .3s ease-in-out;
+    margin-bottom: 50px;
+}
+.main-content > .card > .card_img {
+    margin-top: -5vw;
+}
+.main-content > .card > .card_img > img {
+    width: 265px;
+    height: 40vh;
+}
+.main-content > .card > .card_header {
+    flex-direction: column;
+    color: #fff;
+}
+.main-content > .card > .card_header > h2 {
+    font-size: 18px;
+}
+.main-content > .card > .card_header > p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.3);
+    margin: 8px 0;
+}
+.main-content > .card > .card_header > .price {
+    font-size: 25px;
+    color: #fe8033;
+}
+.main-content > .card > .card_header > .price > span {
+    display: inline-block;
+}
+.btn {
+    width: 130px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 35px;
+    background-color: #2d343e;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    position: relative;
+    transition: background-color .3s ease;
+    overflow: hidden;
+}
+.card:hover {
+    background-color: #2b3039;;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.card:hover > .btn{
+     background-color: #fe8033;
+     color: #fff;
+}     
